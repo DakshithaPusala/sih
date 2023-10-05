@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* RESET & BASIC STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+
+:root {
+  --white: #fff;
+  --darkblue: #1b4965;
+  --lightblue: #edf2f4;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 50px 0 150px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+/* TABLE STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.table-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+  background: var(--darkblue);
+  border-radius: 40px;
+}
+
+.table-wrapper::::-webkit-scrollbar-track {
+  background: var(--white);
+  border-radius: 40px;
+}
+
+.table-wrapper table {
+  margin: 50px 0 20px;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.table-wrapper table th,
+.table-wrapper table td {
+  padding: 10px;
+  min-width: 75px;
+}
+
+.table-wrapper table th {
+  color: var(--white);
+  background: var(--darkblue);
+}
+
+.table-wrapper table tbody tr:nth-of-type(even) > * {
+  background: var(--lightblue);
+}
+
+.table-wrapper table td:first-child {
+  display: grid;
+  grid-template-columns: 25px 1fr;
+  grid-gap: 10px;
+  text-align: left;
+}
+
+.table-credits {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+/* FOOTER STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-footer {
+  position: fixed;
+  right: 0;
+  bottom: 50px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  z-index: 1;
+  background: var(--white);
+}
+
+.page-footer a {
+  display: flex;
+  margin-left: 4px;
+}
+.navbar {
+            background-color: #F1EFEF;
+            overflow: hidden;
+            border-radius: 10px;
+            padding: 15px;
+        }
+        
+        .navbar a {
+            float: left;
+            display: block;
+            color: #102C57;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        .navbar a:hover {
+            background-color: #fff;
+            color: #000;
+            border-radius: 20px;
+        }
+        
+        .logo {
+            float: left;
+            font-size: 20px;
+        }
+        
+        .navbar .btn-container {
+            float: right;
+        }
+        
+        .navbar .btn-container a {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">
+        <a href="#">Ecourt</a>
+    </div>
+    <div class="btn-container">
+        <a href="index.html">Pre-Trial Conference</a>
+        <a href="card.html">File a Case</a>
+        <a href="#">Hearing List</a>
+        <a href="Contactus.html">Support</a>
+        <a href="login.html">Login</a>
+    </div>
+</div>
+    <div class="container">
+        <h1>In case of query or issue related to availability or updation of case-data on this portal, please get in touch with the Central Project Coordinator (CPC) of the concerned High Court having jurisdiction over the particular Court, as per the details given as follows:</h1>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>S.no</th>
+                <th>State</th>
+                <th>Jurisdiction(Uts/State)</th>
+                <th>Gmail</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <span>
+                    <span class="fi fi-af"></span>
+                  </span>
+                  <span>1</span>
+                </td>
+                <td>Allahabad</td>
+                <td>Uttar Pradesh</td>
+                <td>cpc-all[at]aij[dot]gov[dot]in</td>
+                
+              </tr>
+              <tr>
+                <td>
+                  <span>
+                    <span class="fi fi-al"></span>
+                  </span>
+                  <span>2</span>
+                </td>
+                <td>Andhra Pradesh</td>
+                <td>Andhra Pradesh</td>
+                <td>cpc-all[at]aij[dot]gov[dot]in</td>
+                
+              </tr>
+              <tr>
+                <td>
+                  <span>
+                    <span class="fi fi-dz"></span>
+                  </span>
+                  <span>3</span>
+                </td>
+                <td>Calcutta</td>
+                <td>West Bengal</td>
+                <td>cpc-all[at]aij[dot]gov[dot]in</td>
+                
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-credits">Table info by <a href="https://en.wikipedia.org/wiki/List_of_countries_by_past_and_projected_future_population" target="_blank">Wikipedia</a></p>
+      </div>
+      <footer class="page-footer">
+        <span>made by </span>
+        <a href="https://georgemartsoukos.com/" target="_blank">
+          <img width="24" height="24" src="https://assets.codepen.io/162656/george-martsoukos-small-logo.svg" alt="George Martsoukos logo">
+        </a>
+      </footer>
+</body>
+</html>

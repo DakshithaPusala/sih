@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Trial Conference</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <div class="topnav">
+    <div class="logo col-md-4">
+        <img src="logo.png" alt="Logo">
+    </div>
+    <div class="topnav-right">
+        <a href="index.html">Pre-Trial Conference</a>
+        <a href="card.html">File a Case</a>
+        <a href="#search">Hearing List</a>
+        <a href="rights.html">Rights</a>
+        <button id="loginModalBtn" class="btn btn-dark">Login</button>
+    </div>
+</div>
+
+<!-- The Modal -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <button id="closeModalBtn" class="close-button">&times;</button>
+        <a href="loginusser.html" class="button user-button">
+            <i class="user-icon"></i> Login as User
+        </a>
+        <a href="login.html" class="button advocate-button">
+            <i class="advocate-icon"></i> Login as Advocate
+        </a>
+        <a href="register.html" class="button registration-button">
+            <i class="registration-icon"></i> Registration for User
+        </a>
+    </div>
+</div>
+
+
+<script>
+  // Get the modal and buttons
+  const loginModal = document.getElementById('loginModal');
+  const loginModalBtn = document.getElementById('loginModalBtn');
+  const closeModalBtn = document.getElementById('closeModalBtn');
+
+  loginModalBtn.onclick = function() {
+      loginModal.style.display = 'block';
+  }
+
+  closeModalBtn.onclick = function() {
+      loginModal.style.display = 'none';
+  }
+
+  window.onclick = function(event) {
+      if (event.target == loginModal) {
+          loginModal.style.display = 'none';
+      }
+  }
+</script>
+
+
+    <section class="about_section layout_padding long_section" style="background-color: #FBF8F4;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="img-box">
+                        <img src="lady_advocate.jpeg" alt="Lady Advocate">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="detail-box">
+                        <div class="heading_container">
+                            <h1 style="font-size: 80px; font-weight: 600;">Pre-trial conference</h1>
+                        </div>
+                        <p style="font-size: 30px;">
+                            Before the date of your trial is scheduled, you will have to attend a pre-trial conference to deal with administrative matters in preparation for trial.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about_section layout_padding long_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="detail-box">
+                        <div class="heading_container">
+                            <h1 style="font-weight: 800; font-size: 60px;">What is a pre-trial conference</h1>
+                        </div>
+                        <div class="col-md-7">
+                            <p style="font-size: 30px;">
+                                A case management hearing, which is often called a pre-trial conference (PTC), in other jurisdictions, is a virtual or real gathering between litigants prior to the trial before a judge or judicial authority.
+                            </p>
+                            <a href="#">
+                                Read More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about_section layout_padding long_section" style="border-top: solid; background-color: #FBF8F4;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class "detail-box">
+                        <div class="heading_container">
+                            <h1 style="font-size: 80px; font-weight: 600;">What to expect</h1>
+                        </div>
+                        <div class="col-md-12">
+                            <p style="font-size: 20px;">
+                                At the outset of the pre-trial conference, the Advocates, judges, and Clients will discuss the following requisites:
+                                <br>
+                                1. Whether the parties are ready to proceed to trial
+                                <br>
+                                2. The evidence that each party intends to present
+                                <br>
+                                3. Any motions that need to be resolved before trial
+                                <br>
+                                4. The possibility of a settlement of a case
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="img-box">
+                        <img src="whattoexcept.png" alt="What to Expect">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about_section layout_padding long_section" style="border-top: solid; background-color: #FBF8F4;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="detail-box">
+                        <div class="heading_container">
+                            <h1 style="font-size: 50px; font-weight: 600;">Objectives of pre-trial conference</h1>
+                        </div>
+                        <div class="col-md-6">
+                            <p style="font-size: 20px;">
+                                1. Expedite the disposition of the case
+                                <br>2. Help the court establish managerial control over the case
+                                <br>3. Discourage wasteful pre-trial activities
+                                <br>4. Improve the quality of the trial with thorough preparation
+                                <br>5. Facilitate a settlement of the case
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about_section layout_padding long_section" style="background-color: #FBF8F4;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="img-box">
+                        <img src="lady_advocate.jpeg" alt="Lady Advocate">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="detail-box">
+                        <div class="heading_container">
+                            <h1 style="font-size: 80px; font-weight: 600;">Need Help?</h1>
+                        </div>
+                        <p style="font-size: 30px;">
+                            The information here is for general guidance as the courts do not provide legal advice. If you need further help, you may want to get independent legal advice.
+                        </p>
+                        <a href="#">
+                            Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about_section layout_padding long_section" style="background-color: #FBF8F4;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="detail-box">
+                        <div class="heading_container">
+                            <h1 style="font-size: 80px; font-weight: 600; text-align: center;">Resource</h1>
+                        </div>
+                        <p style="font-size: 30px;">
+                            Refer to Chapter 4: Pre-trial Conference of the Guidebook for Accused in Person (PDF, 373 KB).
+                        </p>
+                        <a href="PRE-TRIAL_conference.pdf" download>
+                            Download
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <div>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </section>
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            INDIAN COURT
+                        </h6>
+                        <p>
+                            <a href="https://ecourts.gov.in/ecourts_home/static/highcourts.php" class="text-reset">High Court</a>
+                        </p>
+                        <p>
+                            <a href="https://districts.ecourts.gov.in/" class="text-reset">District Court</a>
+                        </p>
+                        <p>
+                            <a href="http://supremecourtofindia.nic.in/" class="text-reset">Supreme Court</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Information and Services
+                        </h6>
+                        <p>
+                            <a href="https://services.ecourts.gov.in/ecourtindia_v6/" class="text-reset">Case Status</a>
+                        </p>
+                        <p>
+                            <a href="https://services.ecourts.gov.in/ecourtindia_v6/" class="text-reset">Court Order</a>
+                        </p>
+                        <p>
+                            <a href="https://services.ecourts.gov.in/ecourtindia_v6/" class="text-reset">CNR Number</a>
+                        </p>
+                        <p>
+                            <a href="https://services.ecourts.gov.in/ecourtindia_v6/?p=about_us/index&app_token=51261e6b316b26e19ccfc65237eb5d5181c50b8bca3e6abe19ead16ba9d428b8" class="text-reset">About Us</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            About Indian Court
+                        </h6>
+                        <p>
+                            <a href="https://services.ecourts.gov.in/ecourtindia_v6/" class="text-reset">Terms and Conditions</a>
+                        </p>
+                        <p>
+                            <a href="https://services.ecourts.gov.in/ecourtindia_v6/" class="text-reset">Contact Us</a>
+                        </p>
+                        <p>
+                            <a href="https://services.ecourts.gov.in/ecourtindia_v6/" class="text-reset">Privacy and Policy</a>
+                        </p>
+                        <p>
+                            <a href="https://services.ecourts.gov.in/ecourtindia_v6/?p=about_us/index&app_token=51261e6b316b26e19ccfc65237eb5d5181c50b8bca3e6abe19ead16ba9d428b8" class="text-reset">Disclaimer</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <footer class="text-center text-white" style="background-color: #caced1;">
+        <div class="container p-4">
+            <section class="">
+                <div class="row">
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded">
+                            <img src="Digital_india.png" class="w-100">
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded">
+                            <img src="indian_court_logo_6.png" class="w-100">
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded">
+                            <img src="india_court_logo_5.png" class="w-100">
+                            <a href="#!">
+                                <div "mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded">
+                            <img src="india_court_logo_4.png" class="w-100">
+                            <a href="#!">
+                                <div "mask" style="background-color: rgba(0, 0, 0, 0.2);"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">Government of India</a>
+        </div>
+    </footer>
+</body>
+</html>

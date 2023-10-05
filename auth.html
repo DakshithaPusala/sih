@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Example</title>
+    <style>
+        *{
+            font-family: "Lucida Console";
+        }
+        body {
+            background-color: #f0f0f0;
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+            /* height: 100vh; */
+            margin: 0;
+        }
+
+        .container {
+            margin-top: 200px;
+            margin-left: 500px;
+            width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container h2 {
+    text-align: center; /* Center-align the text */
+}
+
+        .container input[type="text"] {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .container input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .navbar {
+            background-color: #F1EFEF;
+            overflow: hidden;
+            border-radius: 10px;
+            padding: 15px;
+        }
+        
+        .navbar a {
+            float: left;
+            display: block;
+            color: #102C57;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        .navbar a:hover {
+            background-color: #fff;
+            color: #000;
+            border-radius: 20px;
+        }
+        
+        .logo {
+            float: left;
+            font-size: 20px;
+        }
+        
+        .navbar .btn-container {
+            float: right;
+        }
+        
+        .navbar .btn-container a {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="#">Ecourt</a>
+        </div>
+        <div class="btn-container">
+            <a href="index.html">Pre-Trial Conference</a>
+            <a href="card.html">File a Case</a>
+            <a href="#">Hearing List</a>
+            <a href="Contactus.html">Support</a>
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Advocate Authentication</h2>
+        <form action="upload.html">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="enrollmentId">Enrollment ID:</label>
+            <input type="text" id="enrollmentId" name="enrollmentId" required>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
